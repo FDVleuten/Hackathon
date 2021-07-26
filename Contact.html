@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title> Dit is de opdracht Hackathon </title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<header class="soft-border">
+    <H1 class="center-title"> Contactformulier voor mijn kleine moestuintje.</H1>
+</header>
+
+<form name="CONTACT" method="POST" data-netlify="true">
+
+    <p>
+        <label>Naam: <br><input type="text" name="name" /></label>
+    </p>
+    <p>
+        <label>Email: <br> <input type="email" name="email" /></label>
+    </p>
+    <p>
+        <label>Telefoonnummer: <br> <input type="tel" name="tel" /> </label>
+    </p>
+    <p>
+        <label>Leeftijd: <br><input type="number" name="number" min="18" max="115"></label>
+    </p>
+    <p>
+        <label>Geslacht </label>
+        <input type="radio" id="Man" name="geslacht" value="Man">
+        <label for="Man">Man</label>
+
+        <input type="radio" id="Vrouw" name="geslacht" value="Vrouw">
+        <label for="Vrouw">Vrouw</label>
+
+        <input type="radio" id="anders/wilnietzeggen" name="geslacht" value="anders/wilnietzeggen">
+        <label for="anders/wilnietzeggen">Anders/ wil niet zeggen </label><br>
+    </p>
+    <p>
+        <label>Poll van de week <br>
+            Wat kweek jij het liefste? <br>
+        </label>
+
+        <input type="checkbox" id="Groente1" name="Favorietekeuken" value="Bloemkool">
+        <label for="Groente1"> Bloemkool</label><br>
+
+        <input type="checkbox" id="Groente2" name="Favorietekeuken" value="Courgette">
+        <label for="Groente2"> Courgette</label><br>
+
+        <input type="checkbox" id="Groente3" name="Favorietekeuken" value="Sla">
+        <label for="Groente3"> Sla</label><br>
+
+        <input type="checkbox" id="Groente4" name="Favorietekeuken" value="Aarbeiden">
+        <label for="Groente4"> Aardbeien</label>
+    </p>
+
+    <p>
+        <label for="Biografie">Schrijf hier je berichten: </label><br>
+        <textarea id="Biografie" name="Biografie" rows="2" cols="50">
+    </textarea>
+    </p>
+    <p>
+        <label>We willen collegapagina's gaan koppelen aan onze webpagina. <br>
+            Geef de URL op van de laatste moestuinwebsite die jij bezocht hebt: </label> <br>
+        <input type="url" pattern="^(http|https|ftp):\/\/.+">inclusief http://, https:// of ftp://>
+    </p>
+    <p>
+        <input type="reset">
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+
+
+
+</form>
+
+<nav class="soft-border">
+    <a href="index.html">
+        <h3>Home</h3>
+    </a>
+</nav>
+
+</html>
